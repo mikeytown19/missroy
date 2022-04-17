@@ -1,10 +1,14 @@
 import { globalCss } from "./stitches.config";
+import "@fontsource/raleway/200.css";
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/600.css";
+import "@fontsource/raleway/800.css";
 
 const globalStyles = globalCss({
   "html,body": {
     margin: "0",
     padding: "0",
-    fontFamily: "inter",
+    fontFamily: "$body",
   },
   "*": {
     boxSizing: "inherit",
@@ -38,7 +42,6 @@ const globalStyles = globalCss({
     },
   },
   h3: {
-    fontFamily: "DM Sans",
     fontWeight: "700",
     fontSize: "$7",
     lineHeight: "$7",

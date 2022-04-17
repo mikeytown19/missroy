@@ -28,8 +28,8 @@ export const NavItems = ({ className, css, isOpen, ...props }) =>
         }
       },
     }} className={className}>
-    <NavItem to='/pricing'>Pricing</NavItem>
-    <NavItem to='/amenities'>Amenities</NavItem>
+
+    <NavItem to='/about'>About</NavItem>
     <NavItem to='/gallery'>Gallery</NavItem>
     <NavItem to='/services'>Our Services</NavItem>
   </StyledBox>

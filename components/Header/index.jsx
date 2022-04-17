@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { styled } from '../../theme/stitches.config'
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion'
-import logo from '../../assets/images/rvr-color.svg'
+import logo from '../../assets/images/miss_roy.png'
 import Link from 'next/link'
 import Box from '../Box'
 import Image from "next/image";
@@ -50,13 +50,16 @@ const Wrapper = styled(motion.nav, {
 })
 
 const Nav = styled(motion.div, {
+  maxWidth: '$4',
   margin: 'auto',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   px: '$5',
+  py: '$4',
   '@bp1': {
-    px: '$1'
+    px: '$1',
+    py: '$1',
   }
 
 })
@@ -76,5 +79,5 @@ const IconButton = styled(motion.div, {
 })
 
 const Logo = styled('img', {
-  height: '$space$11'
+  height: '$space$5'
 })

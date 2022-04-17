@@ -31,83 +31,30 @@ const Gallery = () => {
           </Box>
 
           <Text>
-            60 private acres of ranch-style atmosphere with stunning views and
-            close to town, 27 min north of the SLC airport and adjacent to hwy.
-            #84 (between Layton and Ogden) is the private River View Ranch. A
-            perfect place for family gatherings, meetings, weddings, life
-            celebrations, or whatever you can think to create. Plenty of
-            guest/RV parking plus 4000 sf of ranch-style atmosphere awaits your
-            unforgettable experience. Have your meals catered, or use our
-            well-equipped professional kitchen to feed your herd.
+            Sed haec quis possit intrepidus aestimare tellus. Quid securi etiam
+            tamquam eu fugiat nulla pariatur. Plura mihi bona sunt, inclinet,
+            amari petere vellent. Lorem ipsum dolor sit amet, consectetur
+            adipisici elit, sed eiusmod tempor incidunt ut labore et dolore
+            magna aliqua. Prima luce, cum quibus mons aliud consensu ab eo.
+            Ambitioni dedisse scripsisse iudicaretur. Tityre, tu patulae
+            recubans sub tegmine fagi dolor. Nec dubitamus multa iter quae et
+            nos invenerat. Quisque placerat facilisis egestas cillum dolore.
+            Fabio vel iudice vincam, sunt in culpa qui officia.
           </Text>
           <Text>
-            At River View Ranch, we’re in the business of hosting stunning
-            weddings and special events. Since our opening in 2021, we’ve given
-            our clients the power to customize every aspect of their event, from
-            the decor and floral arrangements to the menu and entertainment.
-            We’ll make sure the special day you’ve envisioned becomes a reality.
-            Contact us to book your venue today. We can’t wait to host you.
+            Sed haec quis possit intrepidus aestimare tellus. Quid securi etiam
+            tamquam eu fugiat nulla pariatur. Plura mihi bona sunt, inclinet,
+            amari petere vellent. Lorem ipsum dolor sit amet, consectetur
+            adipisici elit, sed eiusmod tempor incidunt ut labore et dolore
+            magna aliqua. Prima luce, cum quibus mons aliud consensu ab eo.
+            Ambitioni dedisse scripsisse iudicaretur. Tityre, tu patulae
+            recubans sub tegmine fagi dolor. Nec dubitamus multa iter quae et
+            nos invenerat. Quisque placerat facilisis egestas cillum dolore.
+            Fabio vel iudice vincam, sunt in culpa qui officia.
           </Text>
         </Box>
       </Flex>
-      <Section
-        type="grid"
-        css={{ bg: "$slate2" }}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: viewportAmount }}
-        variants={fadeIn}
-      >
-        <ListItem>
-          <Text size="md">Weddings</Text>
-          <Text className="list_copy">
-            Control breakpoints for stunning designs on every device.{" "}
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Retreats</Text>
-          <Text className="list_copy">
-            Design together with your team in realtime.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Parties</Text>
-          <Text className="list_copy">
-            Brilliant Lighthouse score with automatic asset resizing and
-            pre-rendering.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Gatherings</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Memorials</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Get Aways</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Reunions</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Trails</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-      </Section>
+
       <Footer />
     </>
   );

@@ -12,12 +12,12 @@ import Section from "../components/Section";
 import Text from "../components/Text";
 import Form from "../components/Form";
 import ListItem from "../components/List/ListItem";
-const Services = () => {
+const About = () => {
   const isSmall = useMediaQuery("(max-width: 480px)");
   const viewportAmount = isSmall ? 0.1 : 0.3;
   return (
     <>
-      <Seo page="Services" />
+      <Seo page="About" />
       <Header />
       <Flex
         initial="offscreen"
@@ -27,7 +27,7 @@ const Services = () => {
       >
         <Box variants={itemFadeIn} css={{ maxWidth: "500px" }}>
           <Box variants={itemFadeIn} css={{ maxWidth: "600px" }}>
-            <Text as="h2">Services</Text>
+            <Text as="h2">About</Text>
           </Box>
 
           <Text>
@@ -60,4 +60,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;

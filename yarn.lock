@@ -36,6 +36,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.4.tgz#dffb63dd504506091a0863ceec632e275d4c04eb"
   integrity sha512-iaEuU7l3VGA/bqWW9UsBD2bgFwCwDFwKlmOUft4Jps3pD3Zc9POMNYV0+mNyKbA4OIcIice32l+BMif8vY6pdg==
 
+"@fontsource/raleway@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.npmjs.org/@fontsource/raleway/-/raleway-4.5.5.tgz#0540aeb025190bdc9bf59669fcffbc95d3b7dc8b"
+  integrity sha512-T2zIJ/6/2x+T9+tLtw/qSiJ68ahcceDMUOU3zrzEyNGYXUvlQyU4Cv9wyTmS+TU9IFHHChjMToV6izRL9mqDqg==
+
 "@fontsource/source-code-pro@^4.5.1":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.5.3.tgz#9b4a557a68b9c20709b439bf97721271a4a2bf8a"

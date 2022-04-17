@@ -4,7 +4,7 @@ import { styled } from '../../theme/stitches.config';
 import { motion } from 'framer-motion'
 import Box from '../Box'
 
-const Section = ({ children, css, type = '', bgImg = '', pb = '', padding, ...props, }) => {
+const Section = ({ children, css, type = '', bgImg = '', pb = '', padding, ...props }) => {
   return (
     <Box
       {...props}

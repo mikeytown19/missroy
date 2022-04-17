@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Text from '../Text'
 import Box from '../Box'
 import { fadeIn, itemFadeIn } from '../../theme/motion-variants'
-import logo from '../../assets/images/rvr-color.svg'
+// import logo from '../../assets/images/rvr-color.svg'
 const Hero = ({ children, bgImg = '', nav }) => {
 
   return (
@@ -26,9 +26,9 @@ const Hero = ({ children, bgImg = '', nav }) => {
         }
 
         <Content initial="offscreen" variants={fadeIn} animate="onscreen">
-          <Logo
+          {/* <Logo
             variants={itemFadeIn}
-            src={logo.src} alt='riverview ranch' />
+            src={logo.src} alt='riverview ranch' /> */}
           <Text
             variants={itemFadeIn}
             type="bold">Come celebrate with us.</Text>

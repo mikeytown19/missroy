@@ -8,6 +8,7 @@ import {
   gray,
   green,
   blue,
+  gold,
 } from "@radix-ui/colors";
 import { utils } from "./utils";
 
@@ -30,7 +31,10 @@ const {
       ...gray,
       ...green,
       ...blue,
+      ...gold,
       dark: "#333333",
+      primary: "#b49b57",
+      primary_dark: "#8f7b4d",
       // Semantic colors
       hiContrast: "$slate12",
       loContrast: "$slate1",
@@ -38,7 +42,7 @@ const {
       shadowDark: "hsl(206 22% 7% / 20%)",
     },
     fonts: {
-      body: "DM Sans",
+      body: "Raleway, sans-serif",
       inter: "inter, monospace",
     },
     fontSizes: {
