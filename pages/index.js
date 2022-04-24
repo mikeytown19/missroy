@@ -11,13 +11,21 @@ import Section from "../components/Section";
 import Text from "../components/Text";
 import Form from "../components/Form";
 import ListItem from "../components/List/ListItem";
-
 import missRoy from "../assets/images/missroy.jpeg";
+import PortableText from "../components/PortableText";
 
+import { getClient } from "../lib/sanity.server";
 import { useMediaQuery } from "../hooks/utils";
 import { UsersFour, Cake, Gift, Knife } from "phosphor-react";
+import { groq } from "next-sanity";
 
-export default function Home() {
+const pageQuery = groq`*[_type == "page"]{
+  pageBuilder[]
+{
+  ...,
+}  }`;
+
+export default function Home({ data }) {
   const isSmall = useMediaQuery("(max-width: 480px)");
   const viewportAmount = isSmall ? 0.1 : 0.3;
 
@@ -25,7 +33,8 @@ export default function Home() {
     <>
       <Seo />
       <Header />
-
+      <PortableText blocks={data?.[0]?.pageBuilder} />
+      {/*
       <Flex
         initial="offscreen"
         whileInView="onscreen"
@@ -56,7 +65,7 @@ export default function Home() {
         <Box variants={itemFadeIn} css={{ maxWidth: "600px" }}>
           <Logo src={missRoy.src} alt="Current Miss Roy" />
         </Box>
-      </Flex>
+      </Flex> */}
       {/*
       <Section
         type="grid"
@@ -117,28 +126,6 @@ export default function Home() {
         </ListItem>
       </Section> */}
 
-      <Section centered css={{ bg: "$gold4" }}>
-        <Box
-          css={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            textAlign: "center",
-          }}
-        >
-          <Text
-            as="h3"
-            css={{ maxWidth: "$2", ta: "center", fontWeight: "$8" }}
-          >
-            Registrations is now live!
-          </Text>
-          <Button>Register Now</Button>
-          {/* <Text as="h6" css={{ ta: "center", fontWeight: "$2", pt: "$4" }}>
-            - Walt Whitman
-          </Text> */}
-        </Box>
-      </Section>
       <Flex
         initial="offscreen"
         whileInView="onscreen"
@@ -175,14 +162,6 @@ export default function Home() {
   );
 }
 
-const Logo = styled(motion.img, {
-  height: "580px",
-  maxWidth: "500px",
-  width: "100%",
-  objectFit: "cover",
-  br: "$1",
-});
-
 const Button = styled("button", {
   appearance: "none",
   display: "inline-block",
@@ -204,3 +183,11 @@ const Button = styled("button", {
     bg: "$primary_dark",
   },
 });
+
+export async function getStaticProps({ preview = false }) {
+  const data = await getClient(preview).fetch(pageQuery);
+
+  return {
+    props: { data },
+  };
+}
