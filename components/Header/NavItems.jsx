@@ -44,11 +44,13 @@ const StyledBox = styled(Box, {
     position: 'absolute',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    opacity: 0
+    opacity: 0,
+    pointerEvents: 'none',
   },
   variants: {
     isOpen: {
       true: {
+        pointerEvents: 'all',
         zIndex: 1,
         py: '$4',
         opacity: 1,

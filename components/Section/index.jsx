@@ -83,6 +83,10 @@ const Wrapper = styled(motion.section, {
   width: "100%",
   height: "auto",
   "--stack-native-gap": "40px",
+  '@bp2': {
+    py: "$6",
+    color: 'red'
+  },
   variants: {
     pb: {
       none: {

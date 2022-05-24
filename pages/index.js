@@ -3,7 +3,7 @@ import { styled } from "../theme/stitches.config";
 import { getClient } from "../lib/sanity.server";
 import { useMediaQuery } from "../hooks/utils";
 import { groq } from "next-sanity";
-
+import Link from "next/link";
 import ListItem from "../components/List/ListItem";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -31,7 +31,7 @@ export default function Home({ data }) {
       <Seo />
       <Header />
 
-      <Flex>
+      <Flex css={{ px: "$4", "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$3",
@@ -58,7 +58,7 @@ export default function Home({ data }) {
             Roy High School
           </Text>
         </Box>
-        <Box css={{ maxWidth: "600px" }}>
+        <Box css={{ maxWidth: "500px" }}>
           <StyledImage
             width={500}
             height={500}
@@ -81,7 +81,9 @@ export default function Home({ data }) {
           }}
         >
           <Text as="h3">Registrations is now live!</Text>
-          <Button css={{ mt: "$4" }}>Register Now</Button>
+          <Link href="/resources">
+            <Button css={{ mt: "$4" }}>Register Now</Button>
+          </Link>
         </Box>
       </Section>
 

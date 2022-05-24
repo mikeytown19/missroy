@@ -49,6 +49,10 @@ const Wrapper = styled(motion.section, {
   justifyContent: "flex-start",
   alignItems: "center",
   py: "$12",
+  '@bp2': {
+    py: "$8",
+
+  },
   width: "100%",
   height: "auto",
   "--stack-native-gap": "40px",

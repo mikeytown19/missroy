@@ -29,9 +29,10 @@ const Modal = ({ allowedIn, setAllowedIn }) => {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
+        px: "$2",
       }}
     >
-      <Text as="h3" css={{ color: "$primary" }}>
+      <Text as="h3" css={{ color: "$primary", ta: "center" }}>
         Please enter password to view Resources
       </Text>
 
@@ -78,7 +79,7 @@ const Resources = () => {
           <Box css={{ mt: "$6", a: { borderBottom: "$gold10 solid 1px" } }}>
             <Text>
               <a target="_blank" as="a" href="/files/Checklist_2022_.pdf">
-                Checklist First (XLS)
+                Checklist
               </a>
             </Text>
             <Text>
@@ -87,22 +88,39 @@ const Resources = () => {
                 as="a"
                 href="/files/Candidate_Introduction_Due_5-28-22.pdf"
               >
-                Candidate Introduction (PDF)
+                Candidate Introduction
               </a>
             </Text>
-            <Text>Slideshow Pictures (G FORM)</Text>
-            <Text>Slideshow Pictures</Text>
-            <Text>Resume (G FORM)</Text>
-            <Text>Resume</Text>
-            <Text>Social Impact (G Form)</Text>
-            <Text>Social Impact</Text>
+            <Text>
+              <a href="https://forms.gle/t27fipdp6giQF6Jr5" target="_blank">
+                Slideshow Pictures
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfdxZR4HDj0iGVoB34lI5EFezBPkQifgNQIWFf3YRF7e6Z9Ag/viewform"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfZIRxQXWHWe6AslnTk0YXyk0WygOzAXLhLYngVXIubsigZQQ/viewform"
+                target="_blank"
+              >
+                Social Impact
+              </a>
+            </Text>
             <Text>
               <a
                 target="_blank"
                 as="a"
                 href="/files/TalentRequestFormDue6-17-22.pdf"
               >
-                Talent Request Form & Intro (Jotform/PDF)
+                Talent Request Form & Intro
               </a>
             </Text>
             <Text>
@@ -111,21 +129,27 @@ const Resources = () => {
                 as="a"
                 href="/files/Candidate_Committee_Contact_Information_2022.pdf"
               >
-                Contract (PDF)
+                Contract
               </a>
             </Text>
             <Text>
               <a target="_blank" as="a" href="/files/SponsorshirLetter2022.pdf">
-                Sponsorship Letter (PDF)
+                Sponsorship Letter
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/Calendar_2022.pdf">
-                Sponsorship Form (G FORM)
+              <a
+                target="_blank"
+                as="a"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdO9AhXU37W51vy-iyxH7dqeTAaz3QwtWsf0e8FeD4YhzF-vA/viewform?usp=send_form"
+              >
+                Sponsorship Form
               </a>
             </Text>
-            <Text>Sponsorships</Text>
-            <Text>MISC</Text>
+
+            <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
+              MISC
+            </Text>
             <Text>Contact List</Text>
             <Text>
               <a target="_blank" as="a" href="/files/Calendar_2022.pdf">

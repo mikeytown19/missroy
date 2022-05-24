@@ -20,7 +20,7 @@ const Header = ({ seoData }) => {
         <Nav >
           <Link href="/">
             <a>
-              <Text css={{ color: '$primary', fontWeight: '$9' }}>Miss Roy</Text>
+              <Text css={{ color: '$primary', fontWeight: '$9', mb: 0 }}>Miss Roy</Text>
               {/* <Logo src={logo.src} alt='riverview ranch' /> */}
             </a>
           </Link>
@@ -30,7 +30,7 @@ const Header = ({ seoData }) => {
               display: 'none',
               '@bp2': {
                 display: 'block',
-                px: '$4'
+                px: '$1'
               },
             }} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <Cross1Icon /> : <HamburgerMenuIcon />}
@@ -60,8 +60,8 @@ const Nav = styled(motion.div, {
   px: '$5',
   py: '$4',
   '@bp1': {
-    px: '$1',
-    py: '$1',
+    px: '$3',
+    py: '$3',
   }
 
 })
