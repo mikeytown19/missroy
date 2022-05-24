@@ -133,7 +133,11 @@ const Resources = () => {
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/SponsorshirLetter2022.pdf">
+              <a
+                target="_blank"
+                as="a"
+                href="/files/SponsorshipLetter2022-PDF.pdf"
+              >
                 Sponsorship Letter
               </a>
             </Text>
@@ -152,11 +156,29 @@ const Resources = () => {
             </Text>
             <Text>Contact List</Text>
             <Text>
-              <a target="_blank" as="a" href="/files/Calendar_2022.pdf">
+              <a target="_blank" as="a" href="/files/Calendar_missroy2022.pdf">
                 Calendar
               </a>
             </Text>
 
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/Resume&SISInstructionsDue6-17-22.pdf"
+              >
+                Resume & SIS Instructions
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/PhotoShootGuidelines2022.pdf"
+              >
+                Photoshoot Guidelines
+              </a>
+            </Text>
             <Text>
               <a target="_blank" as="a" href="/files/Wardrobepacket2022.pdf">
                 Wardrobe Packet
