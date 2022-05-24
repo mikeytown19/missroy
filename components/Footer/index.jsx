@@ -7,16 +7,16 @@ const Footer = () => {
   return (
     <Wrapper>
       <Text css={{ color: '$gray9' }} size="small">
-        © 2021 Company, Inc. All Rights reserved.
+        2022 Miss Roy
       </Text>
       <Box css={{ svg: { pr: '$2', color: '$gray9' } }}>
-        <Text as="a" href="/" target="_blank">
+        {/* <Text as="a" href="/" target="_blank">
 
           <FacebookLogo weight="fill" size={26} />
         </Text>
         <Text as="a" href="/" target="_blank">
           <InstagramLogo weight="fill" size={26} />
-        </Text>
+        </Text> */}
 
       </Box >
     </Wrapper >

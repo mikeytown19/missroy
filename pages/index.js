@@ -99,10 +99,8 @@ export default function Home({ data }) {
           <Text as="h2" css={{ color: "$primary" }}>
             Contact Us
           </Text>
-          <Text>missroy@gmail.com</Text>
-
-          <Text as="a" href="tel:801-479-4278">
-            666-666-6666
+          <Text as="a" href="mailto:missroycompetition@gmail.com">
+            missroycompetition@gmail.com
           </Text>
         </Box>
         <Box
@@ -110,7 +108,7 @@ export default function Home({ data }) {
             maxWidth: "500px",
           }}
         >
-          <Form />
+          {/* <Form /> */}
         </Box>
       </Flex>
 

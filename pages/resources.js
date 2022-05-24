@@ -127,18 +127,18 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Candidate_Committee_Contact_Information_2022.pdf"
+                href="/files/SponsorshipLetter2022-PDF.pdf"
               >
-                Contract
+                Sponsorship Letter
               </a>
             </Text>
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="/files/SponsorshipLetter2022-PDF.pdf"
+                href="/files/CONTRACT-2022Due6-17-22.pdf"
               >
-                Sponsorship Letter
+                Contract
               </a>
             </Text>
             <Text>
@@ -154,7 +154,15 @@ const Resources = () => {
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
               MISC
             </Text>
-            <Text>Contact List</Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/Candidate_Committee_Contact_Information_2022.pdf"
+              >
+                Contact List
+              </a>
+            </Text>
             <Text>
               <a target="_blank" as="a" href="/files/Calendar_missroy2022.pdf">
                 Calendar

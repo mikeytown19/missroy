@@ -29,11 +29,11 @@ export const NavItems = ({ className, css, isOpen, ...props }) =>
       },
     }} className={className}>
 
-    <NavItem to='/about'>About</NavItem>
-    <NavItem to='/candidates'>Candidates</NavItem>
+    {/* <NavItem to='/about'>About</NavItem>
+    <NavItem to='/candidates'>Candidates</NavItem> */}
     <NavItem to='/resources'>Resources</NavItem>
-    <NavItem to='/sponsers'>Sponsers</NavItem>
-    <NavItem to='/tickets'>Tickets</NavItem>
+    {/* <NavItem to='/sponsers'>Sponsers</NavItem>
+    <NavItem to='/tickets'>Tickets</NavItem> */}
 
   </StyledBox>
 
