@@ -30,6 +30,7 @@ const serializers = {
 const Content = ({ children, node }) => {
 
 
+
   return (
     <Section css={{ bg: `$${node?.bgColor}`, '@bp2': { pb: '$2' } }}>
       <Box

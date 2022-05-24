@@ -5,17 +5,14 @@ import { motion } from 'framer-motion'
 import Box from '../Box'
 
 
-const Flex = ({ children, css, py = '', ...props, }) => {
+const Flex = ({ children, css, py = '', ...props }) => {
   return (
-
-
     <Box
       {...props}
       css={{
         ...css,
         position: "relative",
         overflow: "visible",
-        px: '$6',
         height: "min-content",
         flex: "0 0 auto",
         '@bp2': {

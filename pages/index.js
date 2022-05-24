@@ -1,23 +1,20 @@
+import Image from "next/image";
 import { styled } from "../theme/stitches.config";
-import { motion } from "framer-motion";
-import { fadeIn, itemFadeIn } from "../theme/motion-variants";
+import { getClient } from "../lib/sanity.server";
+import { useMediaQuery } from "../hooks/utils";
+import { groq } from "next-sanity";
+
+import ListItem from "../components/List/ListItem";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 import Box from "../components/Box";
-import Hero from "../components/Hero";
 import Flex from "../components/Flex";
-import Section from "../components/Section";
 import Text from "../components/Text";
+import Section from "../components/Section";
 import Form from "../components/Form";
-import ListItem from "../components/List/ListItem";
-import missRoy from "../assets/images/missroy.jpeg";
-import PortableText from "../components/PortableText";
 
-import { getClient } from "../lib/sanity.server";
-import { useMediaQuery } from "../hooks/utils";
-import { UsersFour, Cake, Gift, Knife } from "phosphor-react";
-import { groq } from "next-sanity";
+import missRoy from "../assets/images/roy_drink.jpg";
 
 const pageQuery = groq`*[_type == "page"]{
   pageBuilder[]
@@ -33,103 +30,62 @@ export default function Home({ data }) {
     <>
       <Seo />
       <Header />
-      <PortableText blocks={data?.[0]?.pageBuilder} />
-      {/*
-      <Flex
-        initial="offscreen"
-        whileInView="onscreen"
-        variants={fadeIn}
-        viewport={{ once: true, amount: viewportAmount }}
-      >
-        <Box variants={itemFadeIn} css={{ maxWidth: "500px" }}>
+
+      <Flex>
+        <Box
+          css={{
+            maxWidth: "$3",
+            display: "flex",
+            ta: "center",
+            flexDirection: "column",
+            jc: "center",
+            alignSelf: "center",
+          }}
+        >
           <Text as="h1" css={{ fontWeight: 900, color: "$primary" }}>
             Miss Roy 2022
           </Text>
-          <Text>
-            Quis aute iure reprehenderit in voluptate velit esse. Lorem ipsum
-            dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
-            incidunt ut labore et dolore magna aliqua. Etiam habebis sem
-            dicantur magna mollis euismod. Qui ipsorum lingua Celtae, nostra
-            Galli appellantur. Hi omnes lingua, institutis, legibus inter se
-            differunt. Quisque ut dolor gravida, placerat libero vel, euismod.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Paullum
-            deliquit, ponderibus modulisque suis ratio utitur. Contra legem
-            facit qui id facit quod lex prohibet. Quam temere in vitiis, legem
-            sancimus haerentia. Morbi odio eros, volutpat ut pharetra vitae,
-            lobortis sed nibh. Donec sed odio operae, eu vulputate felis
-            rhoncus. Nec dubitamus multa iter quae et nos invenerat. Quo usque
-            tandem abutere, Catilina, patientia nostra? Magna pars studiorum,
-            prodita quaerimus.
+          <Text as="h4" css={{ fontWeight: 700 }}>
+            Competition Date:
+          </Text>
+          <Text as="h3" css={{ fontWeight: 700 }}>
+            July 16th, 2022
+          </Text>
+          <Text as="h4" css={{ fontWeight: 700 }}>
+            Competition Location:
+          </Text>
+          <Text as="h3" css={{ fontWeight: 700 }}>
+            Roy High School
           </Text>
         </Box>
-        <Box variants={itemFadeIn} css={{ maxWidth: "600px" }}>
-          <Logo src={missRoy.src} alt="Current Miss Roy" />
+        <Box css={{ maxWidth: "600px" }}>
+          <StyledImage
+            width={500}
+            height={500}
+            src={missRoy.src}
+            alt="Current Miss Roy"
+          />
         </Box>
-      </Flex> */}
-      {/*
-      <Section
-        type="grid"
-        css={{ bg: "$slate2" }}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: viewportAmount }}
-        variants={fadeIn}
-      >
-        <ListItem>
-          <Text size="md">Weddings</Text>
-          <Text className="list_copy">
-            Control breakpoints for stunning designs on every device.{" "}
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Retreats</Text>
-          <Text className="list_copy">
-            Design together with your team in realtime.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Parties</Text>
-          <Text className="list_copy">
-            Brilliant Lighthouse score with automatic asset resizing and
-            pre-rendering.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Gatherings</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Memorials</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Get Aways</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Reunions</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-        <ListItem>
-          <Text size="md">Trails</Text>
-          <Text className="list_copy">
-            Start in seconds with our premade components.
-          </Text>
-        </ListItem>
-      </Section> */}
+      </Flex>
+      <Section css={{ bg: "$gold4", "@bp2": { pb: "$2" } }}>
+        <Box
+          css={{
+            maxWidth: "$2",
+            margin: "auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            "@bp2": {
+              ta: "center",
+            },
+          }}
+        >
+          <Text as="h3">Registrations is now live!</Text>
+          <Button css={{ mt: "$4" }}>Register Now</Button>
+        </Box>
+      </Section>
 
       <Flex
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
         css={{
           bg: "$gray2",
           ".container": {
@@ -137,7 +93,7 @@ export default function Home({ data }) {
           },
         }}
       >
-        <Box variants={fadeIn} css={{ maxWidth: "600px" }}>
+        <Box css={{ maxWidth: "600px" }}>
           <Text as="h2" css={{ color: "$primary" }}>
             Contact Us
           </Text>
@@ -148,7 +104,6 @@ export default function Home({ data }) {
           </Text>
         </Box>
         <Box
-          variants={fadeIn}
           css={{
             maxWidth: "500px",
           }}
@@ -161,6 +116,10 @@ export default function Home({ data }) {
     </>
   );
 }
+
+const StyledImage = styled(Image, {
+  borderRadius: "$4",
+});
 
 const Button = styled("button", {
   appearance: "none",

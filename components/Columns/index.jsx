@@ -25,7 +25,8 @@ const serializers2 = {
 const serializers = {
   types: {
     column: (props) => (
-      <BasePortableText blocks={props.node.body} serializers={serializers2} />
+      <BasePortableText
+        blocks={props.node.body} serializers={serializers2} />
     ),
   },
 }
@@ -36,7 +37,7 @@ const Columns = ({ children, node }) => {
   return (
     <Section css={{ '@bp2': { pb: '$2' } }}>
       <Box
-        centered={node.centered}
+        centered={node?.centered}
         css={{
           maxWidth: '$4',
           margin: 'auto',

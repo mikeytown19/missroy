@@ -4,6 +4,7 @@ import { urlFor } from '../../lib/sanity'
 import Section from '../Section'
 
 const Image = (data) => {
+  console.log(data)
   return (
 
     <ImageWrapper is_center={data?.image_center} full_width={data?.full_width}>

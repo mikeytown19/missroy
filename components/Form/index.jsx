@@ -17,11 +17,8 @@ const Form = () => {
       <Box css={{
         display: "grid",
       }}>
-
         <Input label="Phone" name="phone" placeholder="Phone" required />
       </Box>
-
-
       <TextArea
         label="Message"
         name="message"
@@ -43,7 +40,6 @@ const FromWrapper = styled('form', {
   display: "flex",
   flexDirection: "column",
   gap: "15px",
-
 })
 
 
@@ -55,10 +51,9 @@ const Input = styled('input', {
   border: "none",
   padding: "15px",
   borderRadius: "8px",
-
   fontWeight: 400,
   fontSize: "16px",
-  background: "rgb(235, 235, 235)",
+  backgroundColor: "$gray4",
   color: "rgb(0, 0, 0)",
   boxShadow: "transparent 0px 0px 0px 1px inset"
 })
@@ -74,7 +69,7 @@ const TextArea = styled('textarea', {
   padding: "15px",
   resize: "vertical",
   borderRadius: "8px",
-  background: "rgb(235, 235, 235)",
+  backgroundColor: "$gray4",
   fontWeight: 400,
   fontSize: "16px",
   color: "rgb(0, 0, 0)",
@@ -94,9 +89,14 @@ const Button = styled('button', {
   padding: "15px",
   fontWeight: 600,
   fontSize: "16px",
-  background: "rgb(0, 0, 0)",
+  backgroundColor: "$blackA12",
   cursor: "pointer",
-  color: "rgb(255, 255, 255)",
+  color: "$whiteA12",
   zIndex: 1,
-  opacity: 1
+  opacity: 1,
+  transition: 'opacity 0.2s ease-in-out',
+  '&:hover': {
+    // backgroundColor: "$blackA12",
+    opacity: '0.9'
+  }
 })

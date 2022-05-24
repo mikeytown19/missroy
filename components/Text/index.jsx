@@ -2,6 +2,7 @@
 import { styled } from '../../theme/stitches.config';
 import { motion } from 'framer-motion'
 const Text = styled(motion.p, {
+  color: '$dark',
   '&.price': {
     fontFamily: "DM Sans",
     fontWeight: "700",

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import logo from '../../assets/images/miss_roy.png'
 import Link from 'next/link'
 import Box from '../Box'
+import Text from '../Text'
 import Image from "next/image";
 import { NavItems } from './NavItems'
 
@@ -19,7 +20,8 @@ const Header = ({ seoData }) => {
         <Nav >
           <Link href="/">
             <a>
-              <Logo src={logo.src} alt='riverview ranch' />
+              <Text css={{ color: '$primary', fontWeight: '$9' }}>Miss Roy</Text>
+              {/* <Logo src={logo.src} alt='riverview ranch' /> */}
             </a>
           </Link>
           <IconButton

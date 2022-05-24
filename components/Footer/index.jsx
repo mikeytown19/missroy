@@ -26,6 +26,8 @@ const Footer = () => {
 export default Footer
 
 const Wrapper = styled('footer', {
+  maxWidth: '$3',
+  margin: 'auto',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'start',
