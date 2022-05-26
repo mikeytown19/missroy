@@ -23,6 +23,7 @@ const Flex = ({ children, css, py = '', ...props }) => {
 
       <Wrapper py={py}>
         <Box css={{
+          width: "100%",
           maxWidth: '$4', position: "relative",
           overflow: "visible",
           height: "min-content",

@@ -73,7 +73,7 @@ const globalStyles = globalCss({
   },
   p: {
     fontSize: "$2",
-    lineHeight: "$5",
+    lineHeight: "$6",
     mb: "$2",
     fontWeight: "400",
   },
