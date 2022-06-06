@@ -96,6 +96,23 @@ export default function Home({ data }) {
           },
         }}
       >
+        <Box
+          css={{
+            maxWidth: "500px",
+          }}
+        >
+          {/* <Form /> */}
+        </Box>
+      </Flex>
+      <Flex
+        css={{
+          bg: "$gray2",
+
+          ".container": {
+            alignItems: "center",
+          },
+        }}
+      >
         <Box css={{ maxWidth: "600px", ta: "center", margin: "auto" }}>
           <Text as="h2" css={{ color: "$primary" }}>
             Contact Us

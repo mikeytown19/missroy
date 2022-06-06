@@ -78,7 +78,7 @@ const Resources = () => {
           </Box>
           <Box css={{ mt: "$6", a: { borderBottom: "$gold10 solid 1px" } }}>
             <Text>
-              <a target="_blank" as="a" href="/files/Checklist_2022_.pdf">
+              <a target="_blank" as="a" href="/files/Checklist_missroy.pdf">
                 Checklist
               </a>
             </Text>
@@ -118,7 +118,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/TalentRequestFormDue6-17-22.pdf"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScZ4vy2LwV4TgdEVUJUv41qXWGTrUo-DnBgCuxAgGSr7bViXA/viewform"
               >
                 Talent Request Form & Intro
               </a>
@@ -158,13 +158,13 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Candidate_Committee_Contact_Information_2022.pdf"
+                href="/files/Contact_List_Candidates_Committee_Members.pdf"
               >
                 Contact List
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/Calendar_missroy2022.pdf">
+              <a target="_blank" as="a" href="/files/New_Calendar.pdf">
                 Calendar
               </a>
             </Text>
@@ -190,6 +190,25 @@ const Resources = () => {
             <Text>
               <a target="_blank" as="a" href="/files/Wardrobepacket2022.pdf">
                 Wardrobe Packet
+              </a>
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/Roy-Resume.pdf">
+                Example Resume
+              </a>
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/Roy-SII.pdf">
+                Example SII Essay
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="https://drive.google.com/file/d/1nI3fxA65RF4oPnd6OU60E4HD_ISF6xkY/view?usp=drivesdk"
+              >
+                Example Program Book
               </a>
             </Text>
           </Box>
