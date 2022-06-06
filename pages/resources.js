@@ -211,6 +211,15 @@ const Resources = () => {
                 Example Program Book
               </a>
             </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="https://drive.google.com/file/d/1tnBtGR-pGNT7TBme-Qrss3Y1Bxk5CuaR/view"
+              >
+                Candidate Opening Number Video
+              </a>
+            </Text>
           </Box>
         </Box>
       </Flex>
