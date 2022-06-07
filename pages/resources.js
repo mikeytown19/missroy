@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { fadeIn, itemFadeIn } from "../theme/motion-variants";
 import { useMediaQuery } from "../hooks/utils";
 
@@ -76,7 +77,7 @@ const Resources = () => {
           <Box variants={itemFadeIn} css={{ maxWidth: "$2" }}>
             <Text as="h2">Resources</Text>
           </Box>
-          <Box css={{ mt: "$6", a: { borderBottom: "$gold10 solid 1px" } }}>
+          <Box css={{ mt: "$6" }}>
             <Text>
               <a target="_blank" as="a" href="/files/Checklist_missroy.pdf">
                 Checklist
@@ -219,6 +220,40 @@ const Resources = () => {
               >
                 Candidate Opening Number Video
               </a>
+            </Text>
+            <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
+              Interview Workshop
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/InterviewTips2022.pdf">
+                Interview Tips
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/SampleQuestions-Harmony2022.pdf"
+              >
+                Practice Questions
+              </a>
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/SampleQuestions.pdf">
+                Sample Questions
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/WhatDoJudgesLookForInAPageantInterview.pdf"
+              >
+                What do Judges Look For in a Pageant Interview?
+              </a>
+            </Text>
+            <Text>
+              <Link href="/aboutYourself">Tell me about yourself</Link>
             </Text>
           </Box>
         </Box>

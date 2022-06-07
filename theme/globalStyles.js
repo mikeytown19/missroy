@@ -79,7 +79,7 @@ const globalStyles = globalCss({
   },
   a: {
     color: "inherit",
-    textDecoration: "none",
+
     "&:hover": {
       textDecoration: "underline",
     },

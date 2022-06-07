@@ -17,10 +17,10 @@ const Header = ({ seoData }) => {
   return (
     <>
       <Wrapper isOpen={isOpen}>
-        <Nav >
+        <Nav css={{ a: { textDecoration: "none" } }}>
           <Link href="/">
             <a>
-              <Text css={{ color: '$primary', fontWeight: '$9', mb: 0 }}>Miss Roy</Text>
+              <Text css={{ color: '$primary', fontWeight: '$9', mb: 0, }}>Miss Roy</Text>
               {/* <Logo src={logo.src} alt='riverview ranch' /> */}
             </a>
           </Link>
