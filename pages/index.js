@@ -31,7 +31,7 @@ export default function Home({ data }) {
       <Seo />
       <Header />
 
-      <Flex css={{ "@bp2": { px: "$1" } }}>
+      <Flex css={{ bg: "$tomato3", "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$3",
@@ -61,22 +61,6 @@ export default function Home({ data }) {
           <Text as="h3" css={{ fontWeight: 600, color: "$primary" }}>
             Roy High School
           </Text>
-        </Box>
-        <Box
-          css={{
-            maxWidth: "500px",
-            px: "$2",
-            "@bp2": {
-              margin: "auto",
-            },
-          }}
-        >
-          <StyledImage
-            width={500}
-            height={500}
-            src={missRoy.src}
-            alt="Current Miss Roy"
-          />
         </Box>
       </Flex>
       <Flex css={{ "@bp2": { px: "$1" } }}>
