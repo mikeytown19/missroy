@@ -9,6 +9,7 @@ import {
   green,
   blue,
   gold,
+  pink,
 } from "@radix-ui/colors";
 import { utils } from "./utils";
 
@@ -32,6 +33,8 @@ const {
       ...green,
       ...blue,
       ...gold,
+      ...pink,
+
       dark: "#333333",
       primary: "#b49b57",
       primary_dark: "#8f7b4d",

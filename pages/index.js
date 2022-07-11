@@ -12,53 +12,65 @@ import Box from "../components/Box";
 import Flex from "../components/Flex";
 import Text from "../components/Text";
 import Section from "../components/Section";
+import { urlFor } from "../lib/sanity";
 import Form from "../components/Form";
+import SanityBlockContent from "@sanity/block-content-to-react";
 
 import missRoy from "../assets/images/roy_drink.jpg";
 
-const pageQuery = groq`*[_type == "page"]{
-  pageBuilder[]
-{
-  ...,
-}  }`;
+const teamQuery = groq`*[_type=="person"]
+`;
 
 export default function Home({ data }) {
   const isSmall = useMediaQuery("(max-width: 480px)");
   const viewportAmount = isSmall ? 0.1 : 0.3;
+  const allCandidates = data;
 
   return (
     <>
       <Seo />
       <Header />
 
-      <Flex css={{ px: "$4", "@bp2": { px: "$1" } }}>
+      <Flex css={{ "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$3",
             display: "flex",
             ta: "center",
             flexDirection: "column",
-            jc: "center",
+            jc: "start",
             alignSelf: "center",
+            "@bp2": {
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            },
           }}
         >
           <Text as="h1" css={{ fontWeight: 900, color: "$primary" }}>
-            Miss Roy 2022
+            Miss Roy
           </Text>
-          <Text as="h4" css={{ fontWeight: 700 }}>
-            Competition Date:
+          <Text as="h2" css={{ fontWeight: 600 }}>
+            2022 Scholarshin Competition
           </Text>
-          <Text as="h3" css={{ fontWeight: 700 }}>
-            July 16th, 2022
+
+          <Text as="h3" css={{ fontWeight: 600 }}>
+            July 16th, 2022 - 7 p.m
           </Text>
-          <Text as="h4" css={{ fontWeight: 700 }}>
-            Competition Location:
-          </Text>
-          <Text as="h3" css={{ fontWeight: 700 }}>
+
+          <Text as="h3" css={{ fontWeight: 600, color: "$primary" }}>
             Roy High School
           </Text>
         </Box>
-        <Box css={{ maxWidth: "500px" }}>
+        <Box
+          css={{
+            maxWidth: "500px",
+            px: "$2",
+            "@bp2": {
+              margin: "auto",
+            },
+          }}
+        >
           <StyledImage
             width={500}
             height={500}
@@ -67,25 +79,70 @@ export default function Home({ data }) {
           />
         </Box>
       </Flex>
-      <Section css={{ bg: "$gold4", "@bp2": { pb: "$2" } }}>
+      <Flex css={{ "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$2",
-            margin: "auto",
             display: "flex",
+            ta: "center",
             flexDirection: "column",
-            alignItems: "center",
-            "@bp2": {
-              ta: "center",
-            },
+            jc: "start",
+            alignSelf: "center",
           }}
         >
-          <Text as="h3">Registrations is now live!</Text>
-          <Link href="/resources">
-            <Button css={{ mt: "$4" }}>Register Now</Button>
-          </Link>
+          <Text as="h2" css={{ pb: "$5" }}>
+            Candidates
+          </Text>
+          {allCandidates.map((item) => (
+            <Box
+              css={{
+                display: "flex",
+                jc: "space-between",
+                maxWidth: "$2",
+                alignItems: "flex-start",
+                ta: "left",
+                gap: "$5",
+                my: "$4",
+                "@bp2": {
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                },
+              }}
+            >
+              <Box>
+                <CandidateImage
+                  src={urlFor(item.image).width(500)}
+                  alt={item.name}
+                />
+              </Box>
+              <Box
+                css={{
+                  display: "flex",
+                  jc: "flex-start",
+                  fd: "column",
+                  alignItems: "flex-start",
+                  ta: "left",
+                  flex: "1",
+                  "@bp2": {
+                    ta: "center",
+                    h4: {
+                      textAlign: "center",
+                      width: "100%",
+                    },
+                  },
+                }}
+              >
+                <Text as="h4">{item.name}</Text>
+
+                <StyledSanityBlockContent
+                  blocks={item.body}
+                ></StyledSanityBlockContent>
+              </Box>
+            </Box>
+          ))}
         </Box>
-      </Section>
+      </Flex>
 
       <Flex
         css={{
@@ -135,8 +192,24 @@ export default function Home({ data }) {
   );
 }
 
+const StyledSanityBlockContent = styled(SanityBlockContent, {});
+
 const StyledImage = styled(Image, {
   borderRadius: "$4",
+});
+
+const CandidateImage = styled("img", {
+  width: "300px",
+  height: "320px",
+  objectFit: "cover",
+  objectPosition: "top",
+  transition: "filter .2s ease-in-out",
+  "&:hover": {
+    filter: "grayscale(0)",
+  },
+  "@bp2": {
+    width: "auto",
+  },
 });
 
 const Button = styled("button", {
@@ -162,7 +235,7 @@ const Button = styled("button", {
 });
 
 export async function getStaticProps({ preview = false }) {
-  const data = await getClient(preview).fetch(pageQuery);
+  const data = await getClient(preview).fetch(teamQuery);
 
   return {
     props: { data },
