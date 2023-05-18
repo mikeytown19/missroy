@@ -3,11 +3,11 @@ import { styled } from '../../theme/stitches.config'
 import { urlFor } from '../../lib/sanity'
 import Section from '../Section'
 
-const Image = (data) => {
-  console.log(data)
+const Image = (data, css) => {
+  console.log(css)
   return (
 
-    <ImageWrapper is_center={data?.image_center} full_width={data?.full_width}>
+    <ImageWrapper css={...css} is_center={data?.image_center} full_width={data?.full_width}>
       <StyledImage placeholder="blur" full_width={data?.full_width} src={urlFor(data.asset._ref).width(1600).url()}   {...data} />
     </ImageWrapper>
 

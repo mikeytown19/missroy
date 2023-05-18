@@ -87,32 +87,21 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Candidate_Introduction_Due_5-28-22.pdf"
+                href="https://forms.gle/qiGjuHktciFFarVT8"
               >
-                Candidate Introduction
-              </a>
-            </Text>
-            <Text>
-              <a href="https://forms.gle/t27fipdp6giQF6Jr5" target="_blank">
-                Slideshow Pictures
+                Contestant Bio
               </a>
             </Text>
 
             <Text>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfdxZR4HDj0iGVoB34lI5EFezBPkQifgNQIWFf3YRF7e6Z9Ag/viewform"
-                target="_blank"
-              >
-                Resume
+              <a href="https://forms.gle/sU36qCGnmWfvMVrA6" target="_blank">
+                Fact Sheet
               </a>
             </Text>
 
             <Text>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfZIRxQXWHWe6AslnTk0YXyk0WygOzAXLhLYngVXIubsigZQQ/viewform"
-                target="_blank"
-              >
-                Social Impact
+              <a href="CSI Essay Upload" target="_blank">
+                COMMUNITY SERVICE INITIATIVE
               </a>
             </Text>
             <Text>
@@ -128,7 +117,16 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/SponsorshipLetter2022-PDF.pdf"
+                href="https://forms.gle/7LYCV63LQR61bKrSA"
+              >
+                Health & Fitness Statement Submissions
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/2023_Sponsorship_Letter.pdf"
               >
                 Sponsorship Letter
               </a>
@@ -137,8 +135,13 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/CONTRACT-2022Due6-17-22.pdf"
+                href="/files/2023_Paperwork_Instructions.pdf"
               >
+                Paperwork Instructions
+              </a>
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/23_24_Contract.pdf">
                 Contract
               </a>
             </Text>
@@ -149,6 +152,26 @@ const Resources = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdO9AhXU37W51vy-iyxH7dqeTAaz3QwtWsf0e8FeD4YhzF-vA/viewform?usp=send_form"
               >
                 Sponsorship Form
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="https://forms.gle/Z4xdHizYXRGMm6e98"
+              >
+                Sponsor Ad Form
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="https://forms.gle/p4VgDyZ3T8dMhp5r7"
+              >
+                Talent Request Form
               </a>
             </Text>
 
@@ -165,7 +188,11 @@ const Resources = () => {
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/New_Calendar.pdf">
+              <a
+                target="_blank"
+                as="a"
+                href="/files/2023_Miss_Roy_Calendar_2023.pdf"
+              >
                 Calendar
               </a>
             </Text>
@@ -174,22 +201,39 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Resume&SISInstructionsDue6-17-22.pdf"
+                href="https://forms.gle/3tqVG7cWoc9jWbKo6"
               >
-                Resume & SIS Instructions
+                Talent Music Submissions
               </a>
             </Text>
+
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="/files/PhotoShootGuidelines2022.pdf"
+                href="https://forms.gle/zi5u6nnyZKVHoQo89"
+              >
+                T-Shirt Order
+              </a>
+            </Text>
+
+            <Text>
+              <a target="_blank" as="a" href="">
+                _
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/Photoshoot_Information!.pdf"
               >
                 Photoshoot Guidelines
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/Wardrobepacket2022.pdf">
+              <a target="_blank" as="a" href="/files/WardrobeGuidelines.pdf">
                 Wardrobe Packet
               </a>
             </Text>
@@ -259,9 +303,9 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn !== "MissRoy22!" && (
+      {/* {allowedIn !== "MissRoy" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
-      )}
+      )} */}
       <Footer />
     </>
   );

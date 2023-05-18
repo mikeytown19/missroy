@@ -16,11 +16,12 @@ import { urlFor } from "../lib/sanity";
 import Form from "../components/Form";
 import SanityBlockContent from "@sanity/block-content-to-react";
 
-import missRoy from "../assets/images/roy_drink.jpg";
+import missRoyImage from "../assets/images/Main_Website_Page.png";
 
 const teamQuery = groq`*[_type=="person"]
 `;
 
+//Welcome to the official website of Miss Roy Utah, a celebration of beauty, talent, and ambition! Join us as we showcase the grace, charisma, and intelligence of the remarkable young women representing our community. Discover the empowering journey of these inspiring individuals and witness the crowning of Miss Roy Utah, a role model who embodies the spirit of excellence and community leadership.
 export default function Home({ data }) {
   const isSmall = useMediaQuery("(max-width: 480px)");
   const viewportAmount = isSmall ? 0.1 : 0.3;
@@ -34,36 +35,43 @@ export default function Home({ data }) {
       <Flex css={{ bg: "$tomato3", "@bp2": { px: "$1" } }}>
         <Box
           css={{
-            maxWidth: "$3",
+            maxWidth: "$2",
             display: "flex",
             ta: "center",
             flexDirection: "column",
             jc: "start",
             alignSelf: "center",
-            "@bp2": {
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            },
+            mt: "-$5",
           }}
         >
-          <Text as="h1" css={{ fontWeight: 900, color: "$primary" }}>
-            Miss Roy
-          </Text>
-          <Text as="h2" css={{ fontWeight: 600 }}>
-            2022 Scholarshin Competition
-          </Text>
-
-          <Text as="h3" css={{ fontWeight: 600 }}>
-            July 16th, 2022 - 7 p.m
-          </Text>
-
-          <Text as="h3" css={{ fontWeight: 600, color: "$primary" }}>
-            Roy High School
-          </Text>
+          <Box
+            css={{
+              display: "flex",
+              jc: "space-between",
+              maxWidth: "$2",
+              alignItems: "flex-start",
+              ta: "left",
+              gap: "$5",
+              my: "$4",
+              "@bp2": {
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              },
+            }}
+          >
+            <Box>
+              <Image
+                css={{ maxHeight: "$5" }}
+                src={missRoyImage}
+                alt="Miss Roy"
+              />
+            </Box>
+          </Box>
         </Box>
       </Flex>
-      <Flex css={{ "@bp2": { px: "$1" } }}>
+
+      {/* <Flex css={{ "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$2",
@@ -126,7 +134,7 @@ export default function Home({ data }) {
             </Box>
           ))}
         </Box>
-      </Flex>
+      </Flex> */}
 
       <Flex
         css={{

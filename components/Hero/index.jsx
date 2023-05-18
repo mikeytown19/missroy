@@ -1,11 +1,13 @@
-import { styled } from '../../theme/stitches.config'
 import { motion } from 'framer-motion'
+import { styled } from '../../theme/stitches.config'
 
-import Text from '../Text'
-import Box from '../Box'
 import { fadeIn, itemFadeIn } from '../../theme/motion-variants'
+import Box from '../Box'
+import Text from '../Text'
+
+
 // import logo from '../../assets/images/rvr-color.svg'
-const Hero = ({ children, bgImg = '', nav }) => {
+function Hero({ bgImg = '', nav }) {
 
   return (
     <>
@@ -22,13 +24,12 @@ const Hero = ({ children, bgImg = '', nav }) => {
             backgroundSize: 'cover',
             backgroundPosition: 'bottom',
             backgroundImage: `url(${bgImg})`
-          }} />
-        }
+          }} />}
 
         <Content initial="offscreen" variants={fadeIn} animate="onscreen">
           {/* <Logo
-            variants={itemFadeIn}
-            src={logo.src} alt='riverview ranch' /> */}
+              variants={itemFadeIn}
+              src={logo.src} alt='riverview ranch' /> */}
           <Text
             variants={itemFadeIn}
             type="bold">Come celebrate with us.</Text>
@@ -70,6 +71,3 @@ const Content = styled(motion.div, {
 
 
 
-const Logo = styled(motion.img, {
-  maxHeight: '350px'
-})
