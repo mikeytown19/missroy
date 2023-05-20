@@ -79,7 +79,7 @@ const Resources = () => {
           </Box>
           <Box css={{ mt: "$6" }}>
             <Text>
-              <a target="_blank" as="a" href="/files/Checklist_missroy.pdf">
+              <a target="_blank" as="a" href="/files/Checklist_2023.pdf">
                 Checklist
               </a>
             </Text>
@@ -99,12 +99,12 @@ const Resources = () => {
               </a>
             </Text>
 
-            <Text>
-              <a href="CSI Essay Upload" target="_blank">
+            {/* <Text>
+              <a href="/files/Checklist_2023.pdf" target="_blank">
                 COMMUNITY SERVICE INITIATIVE
               </a>
-            </Text>
-            <Text>
+            </Text> */}
+            {/* <Text>
               <a
                 target="_blank"
                 as="a"
@@ -112,7 +112,7 @@ const Resources = () => {
               >
                 Talent Request Form & Intro
               </a>
-            </Text>
+            </Text> */}
             <Text>
               <a
                 target="_blank"
@@ -145,15 +145,6 @@ const Resources = () => {
                 Contract
               </a>
             </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdO9AhXU37W51vy-iyxH7dqeTAaz3QwtWsf0e8FeD4YhzF-vA/viewform?usp=send_form"
-              >
-                Sponsorship Form
-              </a>
-            </Text>
 
             <Text>
               <a
@@ -182,7 +173,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Contact_List_Candidates_Committee_Members.pdf"
+                href="/files/2023_Committee_Contact_Sheet.pdf"
               >
                 Contact List
               </a>
@@ -237,16 +228,7 @@ const Resources = () => {
                 Wardrobe Packet
               </a>
             </Text>
-            <Text>
-              <a target="_blank" as="a" href="/files/Roy-Resume.pdf">
-                Example Resume
-              </a>
-            </Text>
-            <Text>
-              <a target="_blank" as="a" href="/files/Roy-SII.pdf">
-                Example SII Essay
-              </a>
-            </Text>
+
             <Text>
               <a
                 target="_blank"
@@ -256,15 +238,7 @@ const Resources = () => {
                 Example Program Book
               </a>
             </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://drive.google.com/file/d/1tnBtGR-pGNT7TBme-Qrss3Y1Bxk5CuaR/view"
-              >
-                Candidate Opening Number Video
-              </a>
-            </Text>
+
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
               Interview Workshop
             </Text>
@@ -303,9 +277,9 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {/* {allowedIn !== "MissRoy" && (
+      {allowedIn !== "MissRoy" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
-      )} */}
+      )}
       <Footer />
     </>
   );
