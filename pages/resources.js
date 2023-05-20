@@ -251,6 +251,15 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
+                href="https://forms.gle/xn3UXs56oo8Z9hcv7"
+              >
+                CSI Essay Submission
+              </a>
+            </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
                 href="/files/SampleQuestions-Harmony2022.pdf"
               >
                 Practice Questions
