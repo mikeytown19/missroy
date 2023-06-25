@@ -238,15 +238,16 @@ const Resources = () => {
                 Example Program Book
               </a>
             </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/CSI_Essay_EXAMPLES.pdf">
+                CSI ESSAY EXAMPLES
+              </a>
+            </Text>
 
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
               Interview Workshop
             </Text>
-            <Text>
-              <a target="_blank" as="a" href="/files/InterviewTips2022.pdf">
-                Interview Tips
-              </a>
-            </Text>
+
             <Text>
               <a
                 target="_blank"
@@ -268,6 +269,11 @@ const Resources = () => {
             <Text>
               <a target="_blank" as="a" href="/files/SampleQuestions.pdf">
                 Sample Questions
+              </a>
+            </Text>
+            <Text>
+              <a target="_blank" as="a" href="/files/InterviewTips2022.pdf">
+                Interview Tips
               </a>
             </Text>
             <Text>
