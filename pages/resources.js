@@ -272,6 +272,15 @@ const Resources = () => {
               </a>
             </Text>
             <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/FirstLast_30_Seconds_of_Private_Interview.pdf"
+              >
+                Interview Opening & Closing 30 Seconds
+              </a>
+            </Text>
+            <Text>
               <a target="_blank" as="a" href="/files/InterviewTips2022.pdf">
                 Interview Tips
               </a>
