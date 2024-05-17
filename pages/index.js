@@ -16,7 +16,7 @@ import { urlFor } from "../lib/sanity";
 import Form from "../components/Form";
 import SanityBlockContent from "@sanity/block-content-to-react";
 
-import missRoyImage from "../assets/images/Main_Website_Page.png";
+import missRoyImage from "../assets/images/SiteCoverPage.png";
 
 const teamQuery = groq`*[_type=="person"]
 `;
@@ -32,7 +32,7 @@ export default function Home({ data }) {
       <Seo />
       <Header />
 
-      <Flex css={{ bg: "$tomato3", "@bp2": { px: "$1" } }}>
+      <Flex css={{ bg: "$whiteA12", "@bp2": { px: "$1" } }}>
         <Box
           css={{
             maxWidth: "$2",

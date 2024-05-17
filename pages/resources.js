@@ -15,7 +15,7 @@ import Form from "../components/Form";
 import ListItem from "../components/List/ListItem";
 
 const Modal = ({ allowedIn, setAllowedIn }) => {
-  console.log(allowedIn);
+
   return (
     <Box
       css={{
@@ -79,54 +79,23 @@ const Resources = () => {
           </Box>
           <Box css={{ mt: "$6" }}>
             <Text>
-              <a target="_blank" as="a" href="/files/Checklist_2023.pdf">
+              <a target="_blank" as="a" href="/files/Checklist2024.pdf">
                 Checklist
               </a>
             </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://forms.gle/qiGjuHktciFFarVT8"
-              >
-                Contestant Bio
-              </a>
-            </Text>
+
 
             <Text>
-              <a href="https://forms.gle/sU36qCGnmWfvMVrA6" target="_blank">
+              <a href="https://forms.gle/Yx9mHoRPLRF49LxK7" target="_blank">
                 Fact Sheet
               </a>
             </Text>
 
-            {/* <Text>
-              <a href="/files/Checklist_2023.pdf" target="_blank">
-                COMMUNITY SERVICE INITIATIVE
-              </a>
-            </Text> */}
-            {/* <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScZ4vy2LwV4TgdEVUJUv41qXWGTrUo-DnBgCuxAgGSr7bViXA/viewform"
-              >
-                Talent Request Form & Intro
-              </a>
-            </Text> */}
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/7LYCV63LQR61bKrSA"
-              >
-                Health & Fitness Statement Submissions
-              </a>
-            </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="/files/2023_Sponsorship_Letter.pdf"
+                href="/files/Sponsor_Letter_contestant-use.pdf"
               >
                 Sponsorship Letter
               </a>
@@ -135,13 +104,13 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/2023_Paperwork_Instructions.pdf"
+                href="/files/Paperwork_Instructions.pdf"
               >
                 Paperwork Instructions
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/23_24_Contract.pdf">
+              <a target="_blank" as="a" href="/files/2024Contract.pdf">
                 Contract
               </a>
             </Text>
@@ -150,7 +119,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/Z4xdHizYXRGMm6e98"
+                href="https://forms.gle/mpRjNCpKxE6fhUpq6"
               >
                 Sponsor Ad Form
               </a>
@@ -160,7 +129,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/p4VgDyZ3T8dMhp5r7"
+                href="https://forms.gle/UovajWJyEefKvn3d6"
               >
                 Talent Request Form
               </a>
@@ -169,65 +138,23 @@ const Resources = () => {
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
               MISC
             </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="/files/2023_Committee_Contact_Sheet.pdf"
-              >
-                Contact List
-              </a>
-            </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="/files/2023_Miss_Roy_Calendar_2023.pdf"
-              >
-                Calendar
-              </a>
-            </Text>
+
 
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/3tqVG7cWoc9jWbKo6"
+                href="https://forms.gle/Wm3d7MppZYvi6paQ7"
               >
                 Talent Music Submissions
               </a>
             </Text>
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://forms.gle/zi5u6nnyZKVHoQo89"
-              >
-                T-Shirt Order
-              </a>
-            </Text>
 
-            <Text>
-              <a target="_blank" as="a" href="">
-                _
-              </a>
-            </Text>
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="/files/Photoshoot_Information!.pdf"
-              >
-                Photoshoot Guidelines
-              </a>
-            </Text>
-            <Text>
-              <a target="_blank" as="a" href="/files/WardrobeGuidelines.pdf">
-                Wardrobe Packet
-              </a>
-            </Text>
+
+
+
 
             <Text>
               <a
@@ -252,9 +179,9 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/xn3UXs56oo8Z9hcv7"
+                href="https://forms.gle/5zW3oHTPfYvV3GTY6"
               >
-                CSI Essay Submission
+                CSI Essay Upload
               </a>
             </Text>
             <Text>
@@ -301,7 +228,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn !== "MissRoy" && (
+      {allowedIn.toLowerCase() !== "missroy2024" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />
