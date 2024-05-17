@@ -167,7 +167,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://drive.google.com/file/d/1nI3fxA65RF4oPnd6OU60E4HD_ISF6xkY/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/107tQJQKhBwYAOwpmj0aduljz87NzZZBq/view?usp=drivesdk"
               >
                 Example Program Book
               </a>
