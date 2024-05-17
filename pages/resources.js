@@ -92,6 +92,13 @@ const Resources = () => {
             </Text>
 
             <Text>
+              <a target="_blank" as="a" href="/files/CSI_Essay_EXAMPLES.pdf">
+                CSI ESSAY EXAMPLES
+              </a>
+            </Text>
+
+
+            <Text>
               <a
                 target="_blank"
                 as="a"
@@ -163,11 +170,6 @@ const Resources = () => {
                 href="https://drive.google.com/file/d/1nI3fxA65RF4oPnd6OU60E4HD_ISF6xkY/view?usp=drivesdk"
               >
                 Example Program Book
-              </a>
-            </Text>
-            <Text>
-              <a target="_blank" as="a" href="/files/CSI_Essay_EXAMPLES.pdf">
-                CSI ESSAY EXAMPLES
               </a>
             </Text>
 
