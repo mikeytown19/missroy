@@ -228,7 +228,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn.toLowerCase() !== "missroy2024" && (
+      {allowedIn !== "MissRoy" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />
