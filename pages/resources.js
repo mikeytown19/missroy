@@ -239,7 +239,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn === "miss_roy_2025" && (
+      {allowedIn !== "miss_roy_2025" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />
