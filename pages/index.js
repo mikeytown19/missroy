@@ -16,7 +16,7 @@ import { urlFor } from "../lib/sanity";
 import Form from "../components/Form";
 import SanityBlockContent from "@sanity/block-content-to-react";
 
-import missRoyImage from "../assets/images/SiteCoverPage2025.png";
+import missRoyImage from "../assets/images/miss_roy_home_page_2025.png";
 
 const teamQuery = groq`*[_type=="person"]
 `;
