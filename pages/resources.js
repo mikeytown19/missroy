@@ -79,14 +79,14 @@ const Resources = () => {
           </Box>
           <Box css={{ mt: "$6" }}>
             <Text>
-              <a target="_blank" as="a" href="/files/Checklist2024.pdf">
+              <a target="_blank" as="a" href="/files/2025Checklist.pdf">
                 Checklist
               </a>
             </Text>
 
 
             <Text>
-              <a href="https://forms.gle/Yx9mHoRPLRF49LxK7" target="_blank">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScTiMbiCZyRF3RFRYUKgZLWL4o6_dJv1c2o3hS9vGBpmDluNg/viewform" target="_blank">
                 Fact Sheet
               </a>
             </Text>
@@ -102,7 +102,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Sponsor_Letter_contestant-use.pdf"
+                href="/files/2025SponsorLetter.pdf"
               >
                 Sponsorship Letter
               </a>
@@ -111,32 +111,41 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="/files/Paperwork_Instructions.pdf"
+                href="/files/Local-Paperwork-Instructions-1.pdf"
               >
                 Paperwork Instructions
               </a>
             </Text>
             <Text>
-              <a target="_blank" as="a" href="/files/2024Contract.pdf">
-                Contract
-              </a>
+              Contract - Coming Soon
+              {/* <a target="_blank" as="a" href="/files/2024Contract.pdf">
+              </a> */}
             </Text>
 
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/mpRjNCpKxE6fhUpq6"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScI3RuF-NbLcJiyuA1kNXpj-boe6KJUBkWMSFDQptrlpB3c1g/viewform"
               >
                 Sponsor Ad Form
               </a>
             </Text>
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScEOR1zlL7axzBxK1HjlQia4zlqSZJrdTggHW-rtRbJVYPHrQ/viewform"
+              >
+                Titleholder Agreement
+              </a>
+            </Text>
 
             <Text>
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/UovajWJyEefKvn3d6"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdiDptPej43GJfVTgBt4EjPCLlwpgayNMgDZ-ltAdzG1nlG3A/viewform?usp=send_form"
               >
                 Talent Request Form
               </a>
@@ -151,7 +160,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/Wm3d7MppZYvi6paQ7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdD0as5vrdTVDCiI1jRnL-PUzjHsECqD6nMxiWbMJWWChAt7A/viewform"
               >
                 Talent Music Submissions
               </a>
@@ -181,7 +190,7 @@ const Resources = () => {
               <a
                 target="_blank"
                 as="a"
-                href="https://forms.gle/5zW3oHTPfYvV3GTY6"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSebfoLCRiCqiRJ4u_9WxNriQo7_d8peuXUR3UmVnNf-kMsepQ/viewform"
               >
                 CSI Essay Upload
               </a>
@@ -230,7 +239,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn !== "miss_roy2025" && (
+      {allowedIn !== "miss_roy_2025" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />
