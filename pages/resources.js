@@ -181,11 +181,6 @@ const Resources = () => {
                 Example Program Book
               </a>
             </Text>
-
-            <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
-              Interview Workshop
-            </Text>
-
             <Text>
               <a
                 target="_blank"
@@ -195,6 +190,12 @@ const Resources = () => {
                 CSI Essay Upload
               </a>
             </Text>
+
+            <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
+              Interview Workshop
+            </Text>
+
+
             <Text>
               <a
                 target="_blank"
