@@ -286,7 +286,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn == "missroy26" && (
+      {allowedIn !== "missroy26" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />
