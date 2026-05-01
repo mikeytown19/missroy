@@ -164,15 +164,7 @@ const Resources = () => {
 
 
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="/files/2025SponsorLetter.pdf"
-              >
-                Sponsorship Letter
-              </a>
-            </Text>
+            
             <Text>
               <a
                 target="_blank"
@@ -188,25 +180,7 @@ const Resources = () => {
               </a> */}
             </Text>
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScI3RuF-NbLcJiyuA1kNXpj-boe6KJUBkWMSFDQptrlpB3c1g/viewform"
-              >
-                Sponsor Ad Form
-              </a>
-            </Text>
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScEOR1zlL7axzBxK1HjlQia4zlqSZJrdTggHW-rtRbJVYPHrQ/viewform"
-              >
-                Titleholder Agreement
-              </a>
-            </Text>
-
+      
          
 
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
