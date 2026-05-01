@@ -78,24 +78,90 @@ const Resources = () => {
             <Text as="h2">Resources</Text>
           </Box>
           <Box css={{ mt: "$6" }}>
+      
             <Text>
-              <a target="_blank" as="a" href="/files/2025Checklist.pdf">
+              <a
+                target="_blank"
+                as="a"
+                href="/files/2026Calendar.pdf"
+              >
+                Calendar
+              </a>
+            </Text>
+
+            <Text>
+              <a
+                target="_blank"
+                as="a"
+                href="/files/2026Checklist.pdf"
+              >
                 Checklist
               </a>
             </Text>
 
-
             <Text>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScTiMbiCZyRF3RFRYUKgZLWL4o6_dJv1c2o3hS9vGBpmDluNg/viewform" target="_blank">
-                Fact Sheet
+              <a rel="noopener noreferrer" as="a" href="https://forms.gle/Wx96ptfBCKsczeCNA" target="_blank" >
+              Talent Request Form
               </a>
             </Text>
 
             <Text>
-              <a target="_blank" as="a" href="/files/CSI_Essay_EXAMPLES.pdf">
-                CSI ESSAY EXAMPLES
+              <a rel="noopener noreferrer" as="a" href="https://storage.googleapis.com/msgsndr/2kD74R4iVusddhxXy8hi/media/64ee6c75f6f755e92ac181bb.pdf" target="_blank" >
+              CSI Essay Instructions
               </a>
             </Text>
+
+
+
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://forms.gle/46AprdUNUFRo9k9Z7" target="_blank" >
+              CSI Essay Upload
+              </a>
+            </Text>
+
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://storage.googleapis.com/msgsndr/2kD74R4iVusddhxXy8hi/media/64ee6c75ba2ab03f26752d96.pdf" target="_blank" >
+              Fact Sheet Instructions
+              </a>
+            </Text>
+
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://forms.gle/VtKvkbsyg9RaHqtu5" target="_blank" >
+                Fact Sheet Upload
+              </a>
+            </Text>
+
+
+         
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://www.zeffy.com/en-US/ticketing/sponsorship-form-14" target="_blank" >
+              Sponsorship Opportunity Form 
+              </a>
+            </Text>
+
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://storage.googleapis.com/msgsndr/2kD74R4iVusddhxXy8hi/media/688a781b3c5f720183ed82c3.pdf" target="_blank" >
+              SpotFund Account Setup 
+              </a>
+            </Text>
+
+
+            <Text>
+              <a rel="noopener noreferrer" as="a" href="https://storage.googleapis.com/msgsndr/2kD74R4iVusddhxXy8hi/media/688a7f7fc6431c31762453d5.pdf" target="_blank" >
+              Miss America Registration step-by-step guide
+              </a>
+            </Text>
+
+
+          
+
+
+
 
 
             <Text>
@@ -141,15 +207,7 @@ const Resources = () => {
               </a>
             </Text>
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdiDptPej43GJfVTgBt4EjPCLlwpgayNMgDZ-ltAdzG1nlG3A/viewform?usp=send_form"
-              >
-                Talent Request Form
-              </a>
-            </Text>
+         
 
             <Text as="h4" css={{ mt: "$4", color: "$primary" }}>
               MISC
@@ -157,14 +215,11 @@ const Resources = () => {
 
 
             <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdD0as5vrdTVDCiI1jRnL-PUzjHsECqD6nMxiWbMJWWChAt7A/viewform"
-              >
-                Talent Music Submissions
+              <a rel="noopener noreferrer" as="a" href="https://forms.gle/8guX8RHNBGUpeRvy7" target="_blank" >
+              Talent Music Submission
               </a>
             </Text>
+
 
 
 
@@ -186,15 +241,7 @@ const Resources = () => {
               Interview Workshop
             </Text>
 
-            <Text>
-              <a
-                target="_blank"
-                as="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSebfoLCRiCqiRJ4u_9WxNriQo7_d8peuXUR3UmVnNf-kMsepQ/viewform"
-              >
-                CSI Essay Upload
-              </a>
-            </Text>
+         
             <Text>
               <a
                 target="_blank"
@@ -239,7 +286,7 @@ const Resources = () => {
         </Box>
       </Flex>
 
-      {allowedIn !== "miss_roy_2025" && (
+      {allowedIn == "missroy26" && (
         <Modal allowedIn={allowedIn} setAllowedIn={setAllowedIn} />
       )}
       <Footer />

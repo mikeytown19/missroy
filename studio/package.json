@@ -7,28 +7,26 @@
   "author": "Michael Harvey <Mikeytown19@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "sanity dev",
     "start": "sanity start",
-    "build": "sanity build"
+    "build": "sanity build",
+    "deploy": "sanity deploy"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.29.5",
-    "@sanity/core": "^2.29.5",
-    "@sanity/default-layout": "^2.29.5",
-    "@sanity/default-login": "^2.29.5",
-    "@sanity/desk-tool": "^2.29.5",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.29.5",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "styled-components": "^5.2.0",
+    "sanity": "^3",
+    "@sanity/vision": "^3",
+    "@sanity/ui": "^2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6",
     "@radix-ui/react-icons": "^1.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^4"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:mikeytown19/missroy.git"
